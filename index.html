@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./style/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <script src="./js/script.js" defer></script>
+  <script src="./js/almacen/script.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +19,6 @@
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#tecnologias">Tecnologías</a></li>
         <li><a href="#portafolio">Portafolio</a></li>
-        <li><a href="#acerca">Acerca de mí</a></li>
         <li><a href="#cv">CV</a></li>
         <li><a href="#blog">Blog</a></li>
       </ul>
@@ -28,8 +27,32 @@
 
   <!-- Hero / Inicio -->
   <section id="inicio" class="seccion hero fade-in">
+    <div class="foto-perfil">
+      <img src="./assets/img3.png" alt="Francisco R" />
+    </div>
     <h1>Hola, soy Francisco</h1>
     <h2>Desarrollador Fullstack</h2>
+    <p>
+      Con formación como <strong>Ingeniero en Software</strong> y pasión por el
+      <strong>desarrollo backend</strong>, me dedico a crear soluciones robustas y
+      escalables que impulsan la eficiencia de procesos reales. Disfruto diseñar
+      arquitecturas limpias que conectan de forma fluida con bases de datos y
+      servicios externos.
+    </p>
+
+    <p>
+      Me especializo en construir <strong>APIs RESTful</strong> y sistemas de gestión
+      usando <strong>Java con Spring Boot</strong> y <strong>PHP con Laravel</strong>.
+      Cuando el proyecto lo requiere, complemento mi trabajo con interfaces en
+      <strong>React</strong>, asegurando una experiencia de usuario moderna y coherente.
+    </p>
+
+    <p>
+      Me considero autodidacta, orientado al detalle y comprometido con la entrega
+      de valor. Disfruto optimizar bases de datos relacionales, mantener un flujo de
+      trabajo limpio en <strong>Git</strong> y colaborar en equipos ágiles bajo
+      metodologías como <strong>Scrum</strong>.
+    </p>
     <div class="redes">
       <a href="https://github.com/selecpower" target="_blank"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/francisco-omar-romero-padilla/" target="_blank"><i
@@ -66,6 +89,14 @@
         <p>MySQL</p>
       </div>
       <div class="tech-card">
+        <i class="devicon-postman-plain colored"></i>
+        <p>Postman</p>
+      </div>
+      <div class="tech-card">
+        <i class="devicon-maven-plain colored"></i>
+        <p>Maven</p>
+      </div>
+      <div class="tech-card">
         <i class="devicon-html5-plain colored"></i>
         <p>HTML5</p>
       </div>
@@ -85,53 +116,149 @@
         <i class="devicon-bootstrap-plain colored"></i>
         <p>Bootstrap</p>
       </div>
-      <div class="tech-card">
-        <i class="devicon-maven-plain colored"></i>
-        <p>Maven</p>
-      </div>
+
   </section>
 
   <!-- Portafolio -->
   <section id="portafolio" class="seccion fade-in">
     <h2>Portafolio</h2>
 
-    <!-- Proyecto: Sistema de Gestión de Almacén -->
+    <!-- Proyecto 1 -->
     <div class="project-card glass fade-in">
       <div class="header">
-        <h3>Sistema de Gestión de Almacén</h3>
-        <span class="badge">Laravel</span>
-      </div>
+        <h3>JavaWorks - Ecommerce</h3>
 
-      <div class="carousel">
-        <img src="./assets/almacen/listaMateriales.png" alt="Lista de materiales" onclick="abrirModal(this)" />
-        <img src="./assets/almacen/herramientaForm.png" alt="Formulario de herramientas" onclick="abrirModal(this)" />
-        <img src="./assets/almacen/registroForm.png" alt="Gestión de usuarios y roles" onclick="abrirModal(this)" />
-        <img src="./assets/almacen/listaPeticiones.png" alt="Lista de peticiones" onclick="abrirModal(this)" />
-        <img src="./assets/almacen/detallePeticion.png" alt="Panel de peticiones" onclick="abrirModal(this)" />
-        <img src="./assets/almacen/editarForm.png" alt="Formulario de edicion" onclick="abrirModal(this)" />
-        <img src="./assets/almacen/modeloRelacional.png" alt="Modelo Relacional" onclick="abrirModal(this)" />
       </div>
+      <div class="carousel-container">
+        <div class="carousel" data-carousel>
+          <img src="./assets/e-commerce/hero.png" alt="Hero y Navbar" class="img-proyecto" />
+          <img src="./assets/e-commerce/productos.png" alt="Productos" class="img-proyecto" />
+          <img src="./assets/e-commerce/contacto.png" alt="Formulario de contacto" class="img-proyecto" />
+          <img src="./assets/e-commerce/login.png" alt="Login" class="img-proyecto" />
+          <img src="./assets/e-commerce/registro.png" alt="Registro" class="img-proyecto" />
+          <img src="./assets/e-commerce/carrito.png" alt="Carrito" class="img-proyecto" />
+          <img src="./assets/e-commerce/footer.png" alt="Footer" class="img-proyecto" />
 
+
+        </div>
+      </div>
       <div class="content">
         <div class="details">
           <p>
-            Aplicación web desarrollada con Laravel para digitalizar y optimizar la gestión
-            de inventario, herramientas y peticiones internas en una empresa de mantenimiento.
-            Incluye autenticación con roles, vistas de detalle y sección de peticiones. Interfaz
-            basada en Bootstrap y orientada a escritorio.
+          <p>
+            Plataforma ecommerce con tematica de dulces tradicionales y exoticos, construida con Java y Spring Boot para administrar productos, categorías, pedidos y
+            usuarios.
+            Incluye un sistema de autenticación, panel administrativo para CRUD de productos, carrito de compras,
+            control de stock y procesamiento de pedidos.
+            La arquitectura está basada en MVC con un enfoque RESTful, integrando MySQL para persistencia de datos y
+            Bootstrap en el frontend para una experiencia visual moderna y accesible.
+          </p>
           </p>
         </div>
+        <ul class="tech-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>MySQL</li>
+          <li>Bootstrap</li>
+          <li>Git</li>
+        </ul>
+        <p class="estado"><strong>Estado:</strong> Funcional</p>
+        <div class="redes">
+          <a href="https://github.com/LuisaLzrGcia/ClickNSweet.git" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
 
+
+    <!-- Proyecto 2 -->
+    <div class="project-card glass fade-in">
+      <div class="header">
+        <h3>Sistema de Gestión de Almacén</h3>
+
+      </div>
+      <div class="carousel-container">
+        <div class="carousel" data-carousel>
+          <img src="./assets/almacen/listaUsuarios.png" alt="Lista de usuarios" class="img-proyecto" />
+          <img src="./assets/almacen/listaMateriales.png" alt="Lista de materiales" class="img-proyecto" />
+          <img src="./assets/almacen/herramientaForm.png" alt="Formulario de herramientas" class="img-proyecto" />
+          <img src="./assets/almacen/listaMateriales.png" alt="Lista de materiales" class="img-proyecto" />
+          <img src="./assets/almacen/listaPeticiones.png" alt="Lista de peticiones" class="img-proyecto" />
+          <img src="./assets/almacen/detallePeticion.png" alt="Detalle de petición" class="img-proyecto" />
+          <img src="./assets/almacen/editarForm.png" alt="Editar petición" class="img-proyecto" />
+          <img src="./assets/almacen/modeloRelacional.png" alt="Modelo relacional" class="img-proyecto" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="details">
+          <p>
+          <p>
+            Sistema web desarrollado en Laravel que permite gestionar eficientemente un almacén de herramientas y
+            materiales dentro de una empresa de mantenimiento.
+            La plataforma incluye autenticación con distintos roles (administrador y empleado), control de inventario,
+            registro y edición de herramientas, así como un módulo para gestionar peticiones internas.
+            Se incorporó Bootstrap para una interfaz clara y ordenada, orientada al uso en escritorio, además de un
+            modelo de base de datos relacional que garantiza integridad y escalabilidad.
+          </p>
+          </p>
+        </div>
         <ul class="tech-list">
           <li>Laravel</li>
           <li>PHP</li>
           <li>MySQL</li>
           <li>Bootstrap</li>
         </ul>
-
         <p class="estado"><strong>Estado:</strong> Funcional (pendiente: stock dinámico y responsive)</p>
         <div class="redes">
-          <a href="https://github.com/selecpower" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/selecpower/sistema-de-gestion-de-almacen.git" target="_blank"><i
+              class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyecto 3 -->
+    <div class="project-card glass fade-in">
+      <div class="header">
+        <h3>Gestor de Productos Fullstack</h3>
+
+      </div>
+      <div class="carousel-container">
+        <div class="carousel" data-carousel>
+          <img src="./assets/fullStack/formularioPro.png" alt="Formulario de productos" class="img-proyecto" />
+          <img src="./assets/fullStack/gestionarClientes.png" alt="Lista de clientes" class="img-proyecto" />
+          <img src="./assets/fullStack/ticket.png" alt="Ticket" class="img-proyecto" />
+          <img src="./assets/fullStack/controllerP.png" alt="Controller de productos" class="img-proyecto" />
+          <img src="./assets/fullStack/controllerpedi.png" alt="Controller de pedidos" class="img-proyecto" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="details">
+          <p>
+          <p>
+            Aplicación fullstack desarrollada con React en el frontend y Spring Boot en el backend para la gestión
+            integral de productos, clientes, carrito y pedidos.
+            Permite realizar operaciones CRUD desde un panel administrativo, añadir productos al carrito desde el
+            catálogo, y generar tickets de las compras.
+            El backend expone servicios REST y utiliza H2 como base de datos embebida para pruebas, mientras que el
+            frontend implementa rutas protegidas, hooks personalizados y consumo dinámico de la API.
+          </p>
+          </p>
+        </div>
+        <ul class="tech-list">
+          <li>React</li>
+          <li>Spring Boot</li>
+          <li>H2 Database</li>
+          <li>Postman</li>
+          <li>Git</li>
+        </ul>
+        <p class="estado"><strong>Estado:</strong> En desarrollo</p>
+        <div class="redes">
+          <a href="https://github.com/Axel-MG/Proyecto-Front.git" target="_blank"><i
+              class="fab fa-github"></i></a>Proyecto React
+          <a href="https://github.com/Axel-MG/Proyecto-Back.git" target="_blank"><i
+              class="fab fa-github"></i></a>Proyecto Spring
         </div>
       </div>
     </div>
@@ -140,56 +267,31 @@
       <img class="modal-contenido" id="imgAmpliada" />
       <p id="caption"></p>
     </div>
-
-    <!-- JavaWorks – Ecommerce Web App -->
-    <div class="proyecto">
-      <h3>JavaWorks – Ecommerce Web App</h3>
-      <p>
-        Plataforma de comercio electrónico con frontend responsivo en React. Catálogo,
-        vista de producto y carrito de compras. Backend en desarrollo.
-      </p>
-      <ul>
-        <li><strong>Tecnologías:</strong> React, JavaScript, HTML, CSS</li>
-        <li><strong>Estado:</strong> Frontend avanzado</li>
-      </ul>
-    </div>
-
-    <!-- Proyecto Fullstack (En desarrollo) -->
-    <div class="proyecto en-desarrollo">
-      <h3>Proyecto Fullstack (En desarrollo)</h3>
-      <p>
-        Aplicación de gestión de productos con Spring Boot (JWT, REST, MySQL) y
-        frontend básico en React.
-      </p>
-      <ul>
-        <li><strong>Tecnologías:</strong> Spring Boot, React, MySQL</li>
-        <li><strong>Estado:</strong> Backend completo, frontend en construcción</li>
-      </ul>
-    </div>
   </section>
 
-  <!-- Acerca de mí -->
-  <section id="acerca" class="seccion fade-in">
-    <h2>Acerca de mí</h2>
-    <p>
-      Soy Ingeniero en Software con experiencia en backend y frontend. Me
-      especializo en el desarrollo de sistemas y aplicaciones web utilizando
-      PHP, Laravel, Java, Spring Boot y React.
-    </p>
-  </section>
-
-  <!-- CV / Skills -->
+  <!-- CV  -->
   <section id="cv" class="seccion fade-in">
-    <h2>CV</h2>
-    <p>
-      <strong>Lenguajes y tecnologías:</strong> Java, PHP, React, MySQL,
-      Laravel, Spring Boot, Git, HTML, CSS, JS
-    </p>
-    <p>
-      <strong>Metodologías:</strong> Scrum, trabajo en equipo, orientación a
-      resultados
-    </p>
+    <h2>📄 CV</h2>
+
+    <div class="cv-card glass">
+      <p class="cv-intro">
+        ¿Quieres conocer más sobre mi trayectoria profesional, habilidades técnicas y proyectos destacados? Descarga mi
+        CV en formato PDF:
+      </p>
+      <a href="./assets/CV-Francisco-R.pdf" target="_blank" class="btn-cv">
+        <i class="fas fa-file-download"></i> Ver CV
+      </a>
+
+      <h3>💡 Metodologías y habilidades blandas</h3>
+      <ul class="cv-list">
+        <li><i class="fas fa-check-circle"></i> Scrum y metodologías ágiles</li>
+        <li><i class="fas fa-users"></i> Trabajo colaborativo y liderazgo</li>
+        <li><i class="fas fa-brain"></i> Pensamiento crítico</li>
+        <li><i class="fas fa-seedling"></i> Aprendizaje continuo</li>
+      </ul>
+    </div>
   </section>
+
 
   <!-- Blog -->
   <section id="blog" class="seccion fade-in">
